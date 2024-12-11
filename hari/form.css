@@ -1,0 +1,106 @@
+/* Reset styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(64, 126, 208, 0.921) white);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Form container styling */
+.form-container {
+    background: url(https://i.pinimg.com/736x/99/7e/47/997e475243c753ea222dff54ff5492d8.jpg);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Form header */
+.form-container h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #0072ff;
+    margin-bottom: 20px;
+}
+
+/* Label styles */
+form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color:#eaf4ff;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+/* Input and select styles */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+    background: #f9f9f9;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #0072ff;
+    background: #eaf4ff;
+}
+
+/* Button styles */
+form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+/* Add a subtle hover effect for inputs */
+form input:hover,
+form select:hover,
+form textarea:hover {
+    border-color: #0072ff;
+    background: #f4faff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}
